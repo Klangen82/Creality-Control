@@ -1,34 +1,47 @@
 # Creality Control Integration for Home Assistant
-This custom integration for Home Assistant allows you to monitor and control your Creality 3D printer directly from Home Assistant's interface. With it, you can keep an eye on your current print's status, pause/resume prints, and stop them altogether. This integration aims to bring convenience and remote monitoring capabilities to your 3D printing setup.
 
-Features
-Print Status Monitoring: Check the current status of your print, including progress, print time left, current layer, and more.
-Control Commands: Pause/Resume and Stop your prints directly from Home Assistant.
-Notification Support: Get notified about print completions or issues right within Home Assistant (requires additional configuration).
-Requirements
-A Creality 3D printer that is compatible with the integration.
-The printer must be connected to the same network as your Home Assistant instance.
-Home Assistant Core 2021.6.0 or later.
-Installation
-Download the latest release of the Creality Control integration.
-Unzip the release and copy the creality_control directory into the custom_components directory of your Home Assistant installation.
-Restart Home Assistant to load the new integration.
-Go to Configuration > Integrations in the UI and click on the + Add Integration button.
-Search for Creality Control and follow the on-screen instructions to configure the integration with your printer's details.
-Configuration
-During the integration setup, you will be prompted to enter the following details:
+This custom integration allows Home Assistant users to monitor and control their Creality 3D printers. It offers capabilities such as viewing current print status and sending pause/resume and stop commands directly from the Home Assistant interface.
 
-Host: The IP address of your Creality printer.
-Port: The port used by your Creality printer for network communication (default is 18188).
-Password: The password for your Creality printer, if applicable.
-Important Notes
-Printer Online Requirement: The printer needs to be online and connected to the network to be added successfully to Home Assistant. Ensure your printer is powered on and properly connected to the same network as your Home Assistant instance before attempting to add the integration.
-Control Command Limitations: The pause/resume and stop controls can only be used when a print job has started. Due to Home Assistant's limitations, it's not currently possible to upload prints or initiate print jobs from Home Assistant.
-Support
-For support, questions, or contributions, please visit the GitHub issue tracker for this integration.
+## Features
 
-Disclaimer
+- **Print Status Monitoring**: Track the status of ongoing prints, including progress, remaining time, current layer, and more.
+- **Print Control**: Directly pause/resume and stop prints from within Home Assistant.
+- **Notifications**: Configure Home Assistant to notify you about print completions or issues (additional configuration required).
+
+## Prerequisites
+
+- A compatible Creality 3D printer connected to your network.
+- Home Assistant Core 2021.6.0 or newer.
+
+## Installation
+
+1. Clone this repository or download the latest release.
+2. Copy the `creality_control` folder to your `custom_components` directory in your Home Assistant configuration directory.
+3. Restart Home Assistant to recognize the new integration.
+4. Navigate to **Configuration** > **Integrations** and click **+ Add Integration**.
+5. Search for "Creality Control" and input your printer's details as prompted.
+
+## Configuration
+
+You will need the following information to set up the integration:
+
+- **Host**: IP address of your Creality printer.
+- **Port**: Network port for the printer (default: `18188`).
+- **Password**: Your printer's password, if set.
+
+## Important Considerations
+
+- **Printer Online**: Ensure your printer is online and connected to the same network as Home Assistant for successful integration.
+- **Control Limitations**: Pause/Resume and Stop commands are only functional when there is an active print job. Home Assistant does not support uploading print files or starting prints due to limitations.
+
+## Support
+
+For support, questions, or contributions, please visit the [GitHub issue tracker](https://github.com/Klangen82/Creality-Control/issues).
+
+## Disclaimer
+
 This integration is not officially affiliated with Creality. Use it at your own risk. Always ensure your printer's firmware is up to date with the latest version recommended by Creality.
 
-License
-This Home Assistant integration is released under the MIT License.
+## License
+
+This Home Assistant integration is released under the [MIT License](LICENSE).

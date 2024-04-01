@@ -45,3 +45,5 @@ This integration is not officially affiliated with Creality. Use it at your own 
 ## License
 
 This Home Assistant integration is released under the [MIT License](LICENSE).
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/klangen82)

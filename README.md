@@ -1,6 +1,6 @@
 # Creality Control Integration for Home Assistant
 
-This custom integration allows Home Assistant users to monitor and control their Creality 3D printers. It offers capabilities such as viewing current print status and sending pause/resume and stop commands directly from the Home Assistant interface.
+This custom integration allows Home Assistant users to monitor and control their Creality 3D printers. It offers capabilities such as viewing current print status and sending pause/resume and stop commands directly from the Home Assistant interface. This integration has been specifically tested with the Creality Halot resin printer and is based on WebSocket communication discovered through Wireshark capture while running the Halot software connected to the printer.
 
 ## Features
 
@@ -31,7 +31,7 @@ You will need the following information to set up the integration:
 
 ## Important Considerations
 
-- **Printer Online**: Ensure your printer is online and connected to the same network as Home Assistant for successful integration.
+- **Printer Online**: Ensure your printer is online and connected to the same network as Home Assistant for successful integration. The integration is specifically tested with the Creality Halot resin printer.
 - **Control Limitations**: Pause/Resume and Stop commands are only functional when there is an active print job. Home Assistant does not support uploading print files or starting prints due to limitations.
 
 ## Support
@@ -40,7 +40,7 @@ For support, questions, or contributions, please visit the [GitHub issue tracker
 
 ## Disclaimer
 
-This integration is not officially affiliated with Creality. Use it at your own risk. Always ensure your printer's firmware is up to date with the latest version recommended by Creality.
+This integration is not officially affiliated with Creality. Use it at your own risk. Always ensure your printer's firmware is up to date with the latest version recommended by Creality. The integration's communication mechanism was discovered via Wireshark capture while running Halot software and connected to the printer, and it may not apply universally to all Creality printers.
 
 ## License
 

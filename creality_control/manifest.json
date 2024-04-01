@@ -1,0 +1,13 @@
+{
+  "domain": "creality_control",
+  "name": "Creality Control",
+  "codeowners": ["@Klangen82"],
+  "config_flow": true,
+  "version": "2024.14.1",
+  "requirements": ["aiohttp", "pycryptodome"],
+  "dependencies": [],
+  "codeowners": [],
+  "iot_class": "local_polling",
+  "documentation": "https://github.com/Klangen82/Creality-Control",
+  "issue_tracker": "https://github.com/Klangen82/Creality-Control/issues"
+}

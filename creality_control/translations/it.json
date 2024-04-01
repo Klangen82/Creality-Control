@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connettiti alla tua stampante Creality",
+        "description": "Inserisci l'indirizzo IP e la password della tua stampante Creality. La porta predefinita è 18188",
+        "data": {
+          "host": "Host",
+          "port": "Porta",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi alla stampante, controlla i tuoi dati e riprova. La stampante deve essere online per poter essere aggiunta.",
+      "invalid_auth": "Credenziali di autenticazione non valide.",
+      "unknown": "Si è verificato un errore sconosciuto."
+    },
+    "success": {
+      "title": "Successo",
+      "description": "Connesso con successo alla tua stampante Creality."
+    }
+  }
+}

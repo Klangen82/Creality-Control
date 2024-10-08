@@ -17,9 +17,9 @@ async def async_setup_entry(hass, entry, async_add_entities):
     # Check the printer type to populate the appropriate buttons
     if entry.data.get("printer_type") == "wifi_box":
         buttons.extend([
-            CrealityControlButton(coordinator, f"{coordinator.config['model']} Pause Print", "PRINT_PAUSE"),
-            CrealityControlButton(coordinator, f"{coordinator.config['model']} Resume Print", "PRINT_RESUME"),
-            CrealityControlButton(coordinator, f"{coordinator.config['model']} Stop Print", "PRINT_STOP"),
+            CrealityControlButton(coordinator, f"Pause Print", "PRINT_PAUSE"),
+            CrealityControlButton(coordinator, f"Resume Print", "PRINT_RESUME"),
+            CrealityControlButton(coordinator, f"Stop Print", "PRINT_STOP"),
         ])
     else:  # Default to your original Halot resin printer buttons
         buttons.extend([

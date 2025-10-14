@@ -1,5 +1,10 @@
 # Creality Control Integration for Home Assistant
 
+# ⚠️ This repository has been archived
+
+This project has moved to [SiloCityLabs/Creality-Control](https://github.com/SiloCityLabs/Creality-Control).  
+No further updates will be made here.
+
 This custom integration allows Home Assistant users to monitor and control their Creality 3D printers. It offers capabilities such as viewing current print status and sending pause/resume and stop commands directly from the Home Assistant interface. This integration has been specifically tested with the Creality Halot resin printer and is based on WebSocket communication discovered through Wireshark capture while running the Halot software connected to the printer.
 
 ## Features
